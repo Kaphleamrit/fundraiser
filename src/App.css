@@ -1,0 +1,25 @@
+
+.carouselImg {
+  width: 100vw;
+  height: 300px;
+}
+
+.donateBtn{
+          position: absolute;
+          top: 70%;
+          left: 39%;
+}
+@media screen and (min-width: 768px) {
+  .carouselImg {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50vw;
+  height: 50vh;
+}
+.donateBtn{
+          position: absolute;
+          top: 70%;
+          left: 48%;
+}
+}
