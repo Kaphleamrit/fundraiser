@@ -50,6 +50,18 @@ function App() {
       <Button size="lg" className="donateBtn" variant="success">
         Donate
       </Button>
+      <footer
+        style={{
+          display: "flex",
+          alignItems: "center",
+          marginTop: "150px",
+          color: "white",
+          flexDirection: "column"
+        }}
+      >
+        <span>&copy;copyright</span>
+        <span>Amrit Kaphle</span>
+      </footer>
     </div>
   );
 }
