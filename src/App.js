@@ -1,6 +1,6 @@
 import { Button, Container, Carousel } from "react-bootstrap";
 import Navbar from "./components/Navbar";
-import Lorem, { LoremIpsum } from "react-lorem-ipsum";
+// import Lorem, { LoremIpsum } from "react-lorem-ipsum";
 import Img1 from "./assets/hungryChild.jpg";
 import Img2 from "./assets/hungryChild2.webp";
 import Img3 from "./assets/hugryChild3.jpg";
@@ -9,45 +9,46 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
+    <Container>
+      <div className="App">
+        <Navbar />
 
-      <Carousel>
-        <Carousel.Item>
-          <img className="carouselImg" src={Img1} alt="hungry child" />
-          <Carousel.Caption>
-            <h3>Lorem ipsum odor amet, consectetuer</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
+        <Carousel>
+          <Carousel.Item>
+            <img className="carouselImg" src={Img1} alt="hungry child" />
+            <Carousel.Caption>
+              <h3>Lorem ipsum odor amet, consectetuer</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
 
-        <Carousel.Item>
-          <img className="carouselImg" src={Img2} alt="hungry child" />
-          <Carousel.Caption>
-            <h3>Lorem ipsum odor amet, consectetuer</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="carouselImg" src={Img3} alt="hungry child" />
-          <Carousel.Caption>
-            <h3>Lorem ipsum odor amet, consectetuer</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img className="carouselImg" src={Img4} alt="hungry child" />
-          <Carousel.Caption>
-            <h3>Lorem ipsum odor amet, consectetuer</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-      </Carousel>
-        <Button className = 'donateBtn'
-        variant="success"
-       
-        >Donate</Button>
-    </div>
+          <Carousel.Item>
+            <img className="carouselImg" src={Img2} alt="hungry child" />
+            <Carousel.Caption>
+              <h3>Lorem ipsum odor amet, consectetuer</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="carouselImg" src={Img3} alt="hungry child" />
+            <Carousel.Caption>
+              <h3>Lorem ipsum odor amet, consectetuer</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+          <Carousel.Item>
+            <img className="carouselImg" src={Img4} alt="hungry child" />
+            <Carousel.Caption>
+              <h3>Lorem ipsum odor amet, consectetuer</h3>
+              <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+            </Carousel.Caption>
+          </Carousel.Item>
+        </Carousel>
+        <Button size="lg" className="donateBtn" variant="success">
+          Donate
+        </Button>
+      </div>
+    </Container>
   );
 }
 
