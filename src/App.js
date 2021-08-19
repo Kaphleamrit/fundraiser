@@ -47,16 +47,35 @@ function App() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <Button size="lg" className="donateBtn" variant="success">
-        Donate
-      </Button>
+      <form>
+        <Button type="submit" size="lg" className="donateBtn" variant="success">
+          <a
+            style={{
+              textDecoration: "none",
+              color: "white"
+            }}
+            
+            href="https://pages.razorpay.com/pl_Hn80ONKFkRF7y9/view"
+          >
+            Donate
+          </a>
+        </Button>
+        <script
+          src="https://checkout.razorpay.com/v1/payment-button.js"
+          data-payment_button_id="pl_Hn8TeBJP6MtUyn"
+          async
+        >
+          {" "}
+        </script>
+      </form>
+
       <footer
         style={{
           display: "flex",
           alignItems: "center",
           marginTop: "150px",
           color: "white",
-          flexDirection: "column"
+          flexDirection: "column",
         }}
       >
         <span>&copy;copyright</span>
@@ -67,4 +86,3 @@ function App() {
 }
 
 export default App;
-// Lorem ipsum odor amet, consectetuer adipiscing elit. Augue bibendum senectus felis varius curabitur. Montes ipsum dictumst orci volutpat quisque etiam torquent integer. Senectus proin et nisi aliquam scelerisque ultricies faucibus finibus. Vehicula neque gravida luctus iaculis fringilla. Tincidunt aptent nascetur nunc sed parturient class tristique. Cras pulvinar laoreet phasellus eros pellentesque aliquam vel dapibus. Penatibus vehicula gravida per dignissim quis quisque luctus. Semper dapibus ut efficitur; sollicitudin ligula est nascetur magnis pharetra. Dapibus id maximus metus lobortis nascetur iaculis duis.
