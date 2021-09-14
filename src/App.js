@@ -1,4 +1,4 @@
-import { Button, Carousel } from "react-bootstrap";
+import {  Carousel } from "react-bootstrap";
 import Navbar from "./components/Navbar";
 // import Lorem, { LoremIpsum } from "react-lorem-ipsum";
 import Img1 from "./assets/hungryChild.jpg";
@@ -6,10 +6,12 @@ import Img2 from "./assets/hungryChild2.webp";
 import Img3 from "./assets/hugryChild3.jpg";
 import Img4 from "./assets/hungryChild4.jpg";
 import "./App.css";
+import About from "./components/About";
+import Donate from "./components/Donate";
 
 function App() {
   return (
-    <div className="App">
+    <div id = "home" className="App">
       <Navbar />
 
       <Carousel
@@ -47,33 +49,20 @@ function App() {
           </Carousel.Caption>
         </Carousel.Item>
       </Carousel>
-      <form>
-        <Button type="submit" size="lg" className="donateBtn" variant="success">
-          <a
-            style={{
-              textDecoration: "none",
-              color: "white"
-            }}
-            
-            href="https://pages.razorpay.com/pl_Hn80ONKFkRF7y9/view"
-          >
-            Donate
-          </a>
-        </Button>
-        <script
-          src="https://checkout.razorpay.com/v1/payment-button.js"
-          data-payment_button_id="pl_Hn8TeBJP6MtUyn"
-          async
-        >
-          {" "}
-        </script>
-      </form>
-
+     
+<div id = "donate"
+style = {{
+  display: 'flex',
+  flexDirection: 'column',
+  alignItems : 'center'
+}}><Donate  />
+<About />
+</div>
       <footer
         style={{
           display: "flex",
           alignItems: "center",
-          marginTop: "150px",
+          marginTop: "10  0px",
           color: "white",
           flexDirection: "column",
         }}

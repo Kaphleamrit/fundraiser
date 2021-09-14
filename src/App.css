@@ -1,25 +1,35 @@
-
 .carouselImg {
   width: 100vw;
   height: 300px;
 }
 
-.donateBtn{
-          position: absolute;
-          top: 70%;
-          left: 39%;
+.titles {
+  color: rgb(223, 15, 50);
+  font-style: italic;
+  font-weight: 900;
+}
+
+
+.paragraph {
+  margin-top: 150px;
+  color: rgb(241, 215, 215);
+  padding: 30px;
+  font-size: larger;
+  text-align: center;
+  width: 400px;
+
 }
 @media screen and (min-width: 768px) {
   .carouselImg {
     display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 50vw;
-  height: 50vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50vw;
+    height: 50vh;
+  }
+.paragraph {
+  width: 700px;
+  font-size: 24px;
 }
-.donateBtn{
-          position: absolute;
-          top: 80%;
-          left: 47%;
-}
+  
 }
